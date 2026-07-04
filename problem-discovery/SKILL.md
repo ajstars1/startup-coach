@@ -45,4 +45,6 @@ Persona + problem statement + empathy map + ecosystem/workflow (mermaid diagrams
 
 *Credits: Empathy Map — Dave Gray (XPLANE). Persona/problem-statement/workflow structures as practiced in evidence-first incubation programs; customer archetype discipline — Steve Blank.*
 
+**Ledger discipline (v2):** reference Belief Ledger IDs (`[A4]`, `[F7]`) for every claim; propose new/changed items in a closing "Ledger delta" section rather than restating claims — restated claims drift.
+
 **Fill-in templates:** `TEMPLATES.md` in this skill's folder — copy the structures into your project's `discovery/` and fill with labels.

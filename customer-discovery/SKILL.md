@@ -37,8 +37,8 @@ description: Customer Development interview preparation and debriefing, per Stev
 ## Interview DEBRIEF protocol (when the founder reports back)
 
 1. Capture **what was said/done** (their words, quoted) strictly separate from **interpretation**.
-2. Score **commitment signals**: money (paid, pre-ordered), time (gave more of it willingly), introductions (actual names/numbers). "Great idea!" with none of these = politeness, not validation.
-3. **Move F/A/U items explicitly**: which assumptions gained evidence, which were contradicted, which new unknowns appeared. n=1 is a direction, never a verdict.
+2. Score **commitment signals and grade the evidence E0–E4**: E0 compliments/opinions (count for nothing) · E1 told stories of past behavior · E2 observed behavior · E3 commitment — money promised, real time given, actual introductions (names/numbers) · E4 transaction. "Great idea!" with no E3+ = politeness, not validation. An assumption is working-validated at E3 from ≥3 independent people; pricing claims only at E4.
+3. **Propose ledger deltas explicitly** (the F/A/U Belief Ledger is the single source of truth): which assumptions changed grade (`A7: E1 → E3`), which were contradicted, which new items appeared. n=1 is a direction, never a verdict.
 4. Watch for: the founder pitched instead of listened; positives inflated by politeness; a single story treated as a pattern.
 5. **Persist the debrief** to `discovery/interviews/<date>-<n>.md` in the project, with gaps (⬜) to close at the next touchpoint.
 
@@ -53,5 +53,7 @@ DID I PITCH INSTEAD OF LISTEN? (honesty check)
 ```
 
 *Every question guide is hypotheses in disguise; every debrief is bookkeeping on your beliefs. Nothing here is customer evidence until a real human says it.*
+
+**Ledger discipline (v2):** reference Belief Ledger IDs (`[A4]`, `[F7]`) for every claim; propose new/changed items in a closing "Ledger delta" section rather than restating claims — restated claims drift.
 
 **Fill-in templates:** `TEMPLATES.md` in this skill's folder — copy the structures into your project's `discovery/` and fill with labels.

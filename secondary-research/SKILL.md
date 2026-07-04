@@ -34,4 +34,6 @@ Which industry/sector should you research? **Hint: who are your likely competito
 
 Findings table (Focus area | Finding | Source URL | Confidence) → **3–5 key conclusions about the business environment** (each labeled) → **"What this cannot tell you — needs interviews"** — the honest list of questions only customer discovery answers (willingness to pay, actual behavior, trust barriers, why a past launch failed). Feed conclusions back into `/facts-assumptions-unknowns` as explicit list movements.
 
+**Ledger discipline (v2):** reference Belief Ledger IDs (`[A4]`, `[F7]`) for every claim; propose new/changed items in a closing "Ledger delta" section rather than restating claims — restated claims drift.
+
 **Fill-in templates:** `TEMPLATES.md` in this skill's folder — copy the structures into your project's `discovery/` and fill with labels.

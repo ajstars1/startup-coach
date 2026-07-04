@@ -40,4 +40,6 @@ The MVP is the smallest thing that tests the riskiest fit claim — usually top 
 
 Both sides of the canvas in markdown, every entry labeled `[FACT — quote/source]` / `[ASSUMPTION]` / `[UNKNOWN]`, pains/gains ranked with ranking provenance stated, the fit claim + current fit level, the MVP proposal, and a "Validate next" list routed to `/customer-discovery`. Get the printable canvas from Strategyzer for workshops.
 
+**Ledger discipline (v2):** reference Belief Ledger IDs (`[A4]`, `[F7]`) for every claim; propose new/changed items in a closing "Ledger delta" section rather than restating claims — restated claims drift.
+
 **Fill-in templates:** `TEMPLATES.md` in this skill's folder — copy the structures into your project's `discovery/` and fill with labels.

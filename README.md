@@ -8,13 +8,14 @@ Most AI startup advice fails the same way most startups fail: confident guesses 
 
 ## What you get
 
-One **master skill** that diagnoses your stage and orchestrates the rest, plus nine standalone framework skills you can run individually:
+One **master skill** that diagnoses your situation and orchestrates the rest, plus ten standalone skills you can run individually:
 
 | Skill | Framework | Author(s) | Use when |
 |---|---|---|---|
-| `/startup-coach` | Master orchestrator — stage diagnosis + multi-agent dispatch | — | Any startup question, any stage |
-| `/facts-assumptions-unknowns` | Facts vs Assumptions vs Unknowns | incubation-program practice | ALWAYS FIRST — the hallucination firewall |
+| `/startup-coach` | Master orchestrator — routing, multi-agent dispatch, ledger merging, verification | — | Any startup question, any stage |
+| `/facts-assumptions-unknowns` | **The Belief Ledger** — Facts / Assumptions / Unknowns with evidence grades | incubation-program practice | ALWAYS FIRST — the single source of truth |
 | `/customer-discovery` | Customer Development interviews | Steve Blank & Bob Dorf; Giff Constable | Before/after talking to any customer |
+| `/experiments` | Test cards — price tests, concierge MVPs, channel & smoke tests | David J. Bland & Osterwalder | When interviews can't answer it (esp. pricing) |
 | `/problem-discovery` | Persona, Problem Statement, Empathy Map, Ecosystem & Workflow | Dave Gray (empathy map) et al. | "Who has this problem?" is fuzzy |
 | `/jtbd` | Jobs to be Done + Market Definition | Clayton Christensen; Tony Ulwick | Defining your market by customer + job |
 | `/where-to-play` | Market Opportunity Navigator | Marc Gruber & Sharon Tal | Choosing which market to pursue; pivots |
@@ -37,21 +38,30 @@ cd startup-coach
 
 Or copy any single skill folder into `~/.claude/skills/` (personal) or `your-project/.claude/skills/` (per-project).
 
+## The architecture (v2): one ledger, many lenses
+
+Every claim about your venture lives once, with a stable ID, in a **Belief Ledger** (`discovery/LEDGER.md`): `F#` facts (sourced), `A#` assumptions (with validation plans and **evidence grades E0–E4**), `U#` unknowns (with research steps). Framework skills are *lenses* that reference ledger IDs; interviews, experiments, and research are *movers* that change grades. Restated claims drift — referenced claims can't, and the verifier checks it mechanically. Full rationale: [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md).
+
+**Evidence grades** — because binary "validated ✓" is how founders lie to themselves:
+`E0` opinion/compliment (counts for nothing) → `E1` told story → `E2` observed behavior/artifact → `E3` commitment (time, intros) → `E4` transaction. Working-validated = E3 ×3 independent sources; **pricing claims accept only E4** — only refusable prices produce truth.
+
 ## The Zero-Hallucination Protocol
 
 Embedded in every skill; the whole repo in six rules:
 
-1. Every claim is labeled `[FACT — source]`, `[ASSUMPTION — how to validate]`, or `[UNKNOWN — how to find out]`.
+1. Every claim is labeled `[FACT — source]`, `[ASSUMPTION — how to validate]`, or `[UNKNOWN — how to find out]` — and anchored to its ledger ID.
 2. Never invent numbers. No citable source → it's an UNKNOWN, with the research step that would answer it.
-3. Never invent customer evidence. No fabricated quotes, no personas presented as real people. AI-drafted customer claims are ASSUMPTIONS until validated in real interviews.
+3. Never invent customer evidence. No fabricated quotes, no personas presented as real people. AI-drafted customer claims are `[ASSUMPTION, E0]` until real customers move the grade.
 4. Framework mechanics come from the referenced sources, with authors credited — not improvised.
-5. Filled canvases are hypothesis drafts, never conclusions. Every output ends with *what to validate next, and how*.
-6. Compliments are not validation. Money, time, and introductions are (Constable, *Talking to Humans*).
+5. Filled canvases are hypothesis drafts, never conclusions. Every output ends with a ledger delta + *what to validate next, at what evidence bar*.
+6. Compliments are not validation (E0). Money, time, and introductions are (E3–E4) — Constable, *Talking to Humans*.
 
 ## Design principles
 
-- **Stage-aware.** No idea yet → start from your abilities (Where to Play, Worksheet 1). Raw idea → F/A/U + secondary research + go/no-go. Validating → discovery loop. Scaling → business model + unit economics. The master skill routes you.
-- **Founders do discovery.** These skills prepare and debrief customer interviews; they never pretend to replace them.
+- **Loop-shaped, not canvas-shaped.** The weekly cadence — inventory existing evidence → gate check → pick the cheapest decisive test → run → debrief → persist — is the product; canvases are byproducts.
+- **Artifacts before memory.** Intake starts by auditing what already exists (logs, analytics, configs, inboxes, old posts' reach) — founder memory routinely contradicts the record, and "zero response" has three different causes only artifacts can distinguish.
+- **Stage- and problem-aware.** No idea yet → start from your abilities (Where to Play, Worksheet 1). Raw idea → ledger + research + go/no-go. Validating → the loop. Scaling → business model + unit economics. The master skill routes by the problem in front of you.
+- **Founders do discovery.** These skills prepare and debrief customer interviews and experiments; they never pretend to replace them.
 - **Evidence over enthusiasm.** "Not now" and "not for me" are treated as valid, valuable outcomes — the skills are built to never push "pursue" to please you.
 - **Interview memory.** Skills write debriefs and F/A/U movements to `discovery/` in your project so any future session resumes instead of re-analyzing.
 

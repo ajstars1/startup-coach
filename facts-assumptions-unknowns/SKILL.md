@@ -1,40 +1,48 @@
 ---
 name: facts-assumptions-unknowns
-description: The hallucination firewall for startup thinking. Sorts everything you believe about your business into verifiable FACTS (with sources), ASSUMPTIONS (with validation plans), and UNKNOWNS (with research steps). Use FIRST before any other startup framework, when someone says "we know our customers want this", or whenever a plan is being built on unverified beliefs.
+description: The Belief Ledger — the single source of truth for everything a startup believes. Sorts every claim into verifiable FACTS (with sources), ASSUMPTIONS (with validation plans and evidence grades E0–E4), and UNKNOWNS (with research steps), each with a stable ID that all other frameworks reference. Use FIRST before any other startup framework, when someone says "we know our customers want this", or whenever a plan is being built on unverified beliefs.
 ---
 
-# Facts vs Assumptions vs Unknowns (F/A/U)
+# Facts vs Assumptions vs Unknowns — The Belief Ledger
 
-The epistemic foundation for every other startup framework. Purpose: separate verifiable facts from beliefs, identify what you must learn, and turn beliefs into **testable hypotheses**. Then two engines move items between lists: **secondary research** moves Assumptions → Facts where possible; the rest requires **customer discovery** (interviews + experiments).
+The epistemic spine of the whole system. Every claim about the venture lives HERE, once, with a stable ID (`F1…`, `A1…`, `U1…`). Framework skills are *lenses* that reference ledger items by ID; interviews (`/customer-discovery`), experiments (`/experiments`), and desk research (`/secondary-research`) are *movers* that change grades and move items between lists. One ledger, many views — restated claims drift; referenced claims can't.
 
 ## The three lists
 
-1. **FACTS** — aim for 10. Objectively true and verifiable, **with a source**.
-   - "We have conducted 20 customer interviews with small business owners" — fact, if documented.
-   - "The global market for pet supplies is $5 billion" — a fact **only if sourced from a credible report**; otherwise it's an assumption wearing a suit.
-2. **ASSUMPTIONS** — at least 10. Believed true, needs validation. Each gets a **validation method + pass/fail signal**.
-   - "Customers will pay ₹500/month" — assumption until actual purchases (willingness to pay is only proven by transactions, never surveys).
-   - "Instagram ads will be our best acquisition channel" — assumption until ads run and are measured.
-3. **UNKNOWNS** — things you MUST know but haven't researched. Each gets a **research step**.
-   - "What's our CAC?" → real marketing experiments. "Which alternatives do customers use and why?" → interviews + competitor analysis. "What are the legal requirements?" → desk research / expert consultation.
+1. **FACTS (F#)** — objectively true and verifiable, **with a source** (document, URL, log path, artifact).
+   - "We conducted 20 customer interviews" — fact, if the debriefs exist.
+   - "The market is $5B" — fact **only if sourced from a credible report**; otherwise an assumption wearing a suit.
+2. **ASSUMPTIONS (A#)** — believed true; each carries a **validation method, a numeric pass/fail signal, and its current evidence grade**:
 
-**The movement illustration:** "There are 500,000 pet owners in Bangalore" (Fact, if reliably sourced) → "20% of them will subscribe" (Assumption until validated) → "What % actively seek new pet products?" (Unknown, requiring research).
+   | Grade | Meaning |
+   |---|---|
+   | **E0** | Opinion, compliment, AI reasoning — counts for nothing |
+   | **E1** | Story of past behavior, told to you |
+   | **E2** | Observed behavior or artifact (logs, workarounds seen, a lapsed customer who returned) |
+   | **E3** | Commitment — real time given, actual introductions, scheduled next step |
+   | **E4** | Transaction — money paid, repeat purchase |
+
+   Bars: **working-validated = E3 from ≥3 independent sources · strongly validated = E4 · pricing/willingness-to-pay claims accept only E4** (a survey answer about price is E0–E1 no matter the sample size). n=1 at any grade is a direction, not a verdict.
+3. **UNKNOWNS (U#)** — must-know, not yet researched; each with a concrete research step (interview question / artifact audit / desk-research query / expert).
 
 ## Procedure
 
-1. **Interrogate every "fact" the founder states.** Is there a source or document? No → demote to Assumption and say so out loud. Founders' own launch memories deserve special suspicion — check logs, analytics, and artifacts where they exist ("we got no response" has more than one possible cause: nobody saw it, the pipe was broken, or nobody cared — each demands a different fix).
-2. **Surface hidden assumptions** the founder didn't state: channel beliefs ("our users are on WhatsApp"), trust beliefs, pricing beliefs, segment beliefs, "our launch reached people". Add them.
-3. For each Assumption write: validation method (interview question / experiment / purchase test) + a numeric pass/fail signal (e.g., "pass: ≥4/10 interviewees mention this pain unprompted").
-4. For each Unknown write: the concrete research step and who/what answers it.
-5. You may run web research to convert researchable items into Facts — **every conversion needs a URL**.
-6. Output: three tables (No. | Item | Source or Validation plan) + **"this week's moves"** — which items can change lists this week and exactly how.
+1. **Interrogate every "fact" the founder states.** No source → demote to Assumption, say so. Founder launch memories deserve special suspicion — **audit artifacts first** (logs, analytics, configs, inboxes, old posts' reach): "we got zero response" has three causes — nobody saw it, the pipe was broken, nobody cared — and only the record distinguishes them.
+2. **Surface hidden assumptions**: channel beliefs, trust beliefs, pricing beliefs, segment beliefs, "our launch reached people" — and the meta-assumption "our silence proved no demand."
+3. Every Assumption gets: validation method + numeric pass/fail + current grade (usually E0–E1 at the start — write it honestly).
+4. Every Unknown gets: the concrete step and who/what answers it.
+5. Web research may convert items to Facts — **every conversion needs a URL**.
+6. Maintain **stable IDs forever**: answered Unknowns get struck through with their answer and date, never deleted or renumbered — the ledger is also the venture's learning history.
+7. Close with **"this week's moves"** (which items can change lists/grades this week, via what) and the **gates** — the ordered kill-questions; everything else waits.
 
-**Anti-hallucination rule:** you may ADD assumptions and unknowns the founder missed; you may NOT add facts the founder didn't state unless you fetched a citable source yourself. Guard against the meta-assumption too: "our failed launch proved there's no demand" is itself an unvalidated belief.
+**Anti-hallucination rule:** you may ADD assumptions and unknowns the founder missed; you may NOT add facts the founder didn't state unless you fetched a citable source yourself.
 
-## Output labels (use everywhere)
+## Ledger deltas (how movers report)
 
-`[FACT — source]` · `[ASSUMPTION — validation plan + pass/fail]` · `[UNKNOWN — research step]`
+`A7: E1 → E4-pass at ₹100 (price test, 2026-07-12)` · `U3 → answered: word-of-mouth via friend (interview #1)` · `NEW A14: parking friction drives home-service demand [E1, interview #1]` · `KILLED A5: disproven by …`
 
-*This list is a hypothesis map, not a verdict. Companion skills: `/secondary-research` (moves assumptions to facts), `/customer-discovery` (tests the rest). Framework practice popularized by evidence-first incubation programs; the underlying discipline is Steve Blank's hypothesis testing (Customer Development).*
+The master coach is the only writer of the ledger file; everyone else proposes deltas.
 
-**Fill-in templates:** `TEMPLATES.md` in this skill's folder — copy the structures into your project's `discovery/` and fill with labels.
+*The ledger is a hypothesis map and a learning history, not a verdict. Underlying discipline: Steve Blank's hypothesis testing (Customer Development); evidence-grading practice follows the commitment logic of Constable's* Talking to Humans *and Bland & Osterwalder's* Testing Business Ideas.
+
+**Fill-in templates:** `TEMPLATES.md` in this skill's folder — the ledger lives at `discovery/LEDGER.md` in your project.

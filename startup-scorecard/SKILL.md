@@ -26,7 +26,7 @@ A periodic self-evaluation for the opportunity/product being worked on NOW. Its 
 
 Rules:
 - Every score requires an **Evidence / notes** entry citing something that exists (interview debriefs, logs, transactions, signed LOIs, research with URLs). Nothing written down = 0, regardless of founder certainty.
-- Cross-check against the F/A/U list: a dimension supported only by ASSUMPTIONS caps at 1. One customer/anecdote caps at 2 — n=1 is a direction, not a verdict.
+- Cross-check against the Belief Ledger's evidence grades: a dimension whose support is all E0–E1 (opinions, told stories) caps at 1; E2 (observed behavior/artifacts) caps at 3; scores of 4–5 require E3/E4 (commitments, transactions) from multiple independent sources. One customer/anecdote caps at 2 — n=1 is a direction, not a verdict.
 - Honesty is the feature: "Customer evidence: yet to validate — 0" is a *useful* row, not a shameful one.
 
 ## The closing prompt (always end with this)
@@ -38,5 +38,7 @@ Rules:
 Scorecard table (Dimension | Score | Evidence cited | Next evidence to get) → for every score ≤ 3, the **cheapest** next piece of evidence that would raise it → the two-biggest-risks answer → which companion skills to run next (low problem clarity → `/problem-discovery`; weak customer evidence → `/customer-discovery`; shaky market attractiveness → `/where-to-play` + `/secondary-research`; fuzzy money story → `/business-model-canvas`).
 
 Re-run after every ~15–20 interviews or before any major commitment. Score movement over time matters more than any single snapshot.
+
+**Ledger discipline (v2):** reference Belief Ledger IDs (`[A4]`, `[F7]`) for every claim; propose new/changed items in a closing "Ledger delta" section rather than restating claims — restated claims drift.
 
 **Fill-in templates:** `TEMPLATES.md` in this skill's folder — copy the structures into your project's `discovery/` and fill with labels.

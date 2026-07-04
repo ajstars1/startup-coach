@@ -40,4 +40,6 @@ III. **Keep at least one Backup and one Growth option open**; pursue now / keep 
 
 The three worksheets filled (markdown tables fine), each rating with its basis label, a recommended primary opportunity stated as **application + customer + why**, the agile-focus portfolio — and crucially: **which UNKNOWNs, if answered differently, would flip the recommendation**. Route those to `/secondary-research` and `/customer-discovery`.
 
+**Ledger discipline (v2):** reference Belief Ledger IDs (`[A4]`, `[F7]`) for every claim; propose new/changed items in a closing "Ledger delta" section rather than restating claims — restated claims drift.
+
 **Fill-in templates:** `TEMPLATES.md` in this skill's folder — copy the structures into your project's `discovery/` and fill with labels.

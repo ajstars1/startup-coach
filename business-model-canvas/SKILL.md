@@ -35,4 +35,6 @@ Rules: revenue and cost numbers need sources or `[UNKNOWN + the experiment that 
 
 The 9-block canvas in markdown (every entry labeled), market-type classification + implications, a Get/Keep/Grow plan with per-channel tracking, the riskiest-block test proposal, and a "Validate next" list. Route interview questions to `/customer-discovery` and desk research to `/secondary-research`.
 
+**Ledger discipline (v2):** reference Belief Ledger IDs (`[A4]`, `[F7]`) for every claim; propose new/changed items in a closing "Ledger delta" section rather than restating claims — restated claims drift.
+
 **Fill-in templates:** `TEMPLATES.md` in this skill's folder — copy the structures into your project's `discovery/` and fill with labels.

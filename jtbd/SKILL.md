@@ -31,4 +31,6 @@ Form: **verb + object + context** ("reach the airport on time from home", not "u
 - Do the outcome statements connect to the pains/gains in `/value-proposition-canvas`? They should be the same evidence, different lenses.
 - Every job statement, step, and outcome drafted before interviews is `[ASSUMPTION]` — end with which ones the founder should rank-test with real customers, and how (`/customer-discovery`).
 
+**Ledger discipline (v2):** reference Belief Ledger IDs (`[A4]`, `[F7]`) for every claim; propose new/changed items in a closing "Ledger delta" section rather than restating claims — restated claims drift.
+
 **Fill-in templates:** `TEMPLATES.md` in this skill's folder — copy the structures into your project's `discovery/` and fill with labels.
