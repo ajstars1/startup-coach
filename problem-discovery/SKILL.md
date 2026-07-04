@@ -44,3 +44,5 @@ Quadrants: **Says / Thinks / Does / Feels**, plus Pains and Gains. Pre-interview
 Persona + problem statement + empathy map + ecosystem/workflow (mermaid diagrams welcome), every field labeled `[FACT/ASSUMPTION/UNKNOWN]`, ending with **the 5 highest-value interview questions this analysis raises** — the goal of these drafts is to be proven wrong cheaply. Hand those questions to `/customer-discovery`.
 
 *Credits: Empathy Map — Dave Gray (XPLANE). Persona/problem-statement/workflow structures as practiced in evidence-first incubation programs; customer archetype discipline — Steve Blank.*
+
+**Fill-in templates:** `TEMPLATES.md` in this skill's folder — copy the structures into your project's `discovery/` and fill with labels.

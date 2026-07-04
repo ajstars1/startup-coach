@@ -30,3 +30,5 @@ Form: **verb + object + context** ("reach the airport on time from home", not "u
 - Does the market definition (people + job) match the market opportunity chosen in `/where-to-play` (application + customer)? Flag mismatches.
 - Do the outcome statements connect to the pains/gains in `/value-proposition-canvas`? They should be the same evidence, different lenses.
 - Every job statement, step, and outcome drafted before interviews is `[ASSUMPTION]` — end with which ones the founder should rank-test with real customers, and how (`/customer-discovery`).
+
+**Fill-in templates:** `TEMPLATES.md` in this skill's folder — copy the structures into your project's `discovery/` and fill with labels.

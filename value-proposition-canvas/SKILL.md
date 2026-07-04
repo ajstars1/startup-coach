@@ -39,3 +39,5 @@ The MVP is the smallest thing that tests the riskiest fit claim — usually top 
 ## Output
 
 Both sides of the canvas in markdown, every entry labeled `[FACT — quote/source]` / `[ASSUMPTION]` / `[UNKNOWN]`, pains/gains ranked with ranking provenance stated, the fit claim + current fit level, the MVP proposal, and a "Validate next" list routed to `/customer-discovery`. Get the printable canvas from Strategyzer for workshops.
+
+**Fill-in templates:** `TEMPLATES.md` in this skill's folder — copy the structures into your project's `discovery/` and fill with labels.

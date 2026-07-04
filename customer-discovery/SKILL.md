@@ -53,3 +53,5 @@ DID I PITCH INSTEAD OF LISTEN? (honesty check)
 ```
 
 *Every question guide is hypotheses in disguise; every debrief is bookkeeping on your beliefs. Nothing here is customer evidence until a real human says it.*
+
+**Fill-in templates:** `TEMPLATES.md` in this skill's folder — copy the structures into your project's `discovery/` and fill with labels.

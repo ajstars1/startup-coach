@@ -23,7 +23,9 @@ One **master skill** that diagnoses your stage and orchestrates the rest, plus n
 | `/secondary-research` | Structured desk research | — | Converting assumptions to sourced facts |
 | `/startup-scorecard` | Evidence-based self-evaluation (8 dimensions, 0–5) | incubation-program practice | Health check before demo days / funding / pivots |
 
-The master skill launches **one subagent per framework in parallel**, then a **verifier agent** that hunts for unlabeled claims, unsourced numbers, and invented customer evidence before you ever see the output. No subagent support in your environment? Every skill also runs inline.
+The master skill launches **one subagent per framework in parallel** — each agent gets the founder's context verbatim, reads its framework's `SKILL.md` + `TEMPLATES.md`, and works under the full protocol — then a **verifier agent** hunts for unlabeled claims, unsourced numbers, invented customer evidence, and cross-document contradictions before you ever see the output. No subagent support in your environment? Every skill also runs inline.
+
+**Every skill ships with a `TEMPLATES.md`** — fill-in markdown structures (F/A/U tables, the problem-statement mad-lib, interview debrief sheets, the three Where-to-Play worksheets, both VPC sides, the 9-block BMC, the scorecard) that agents and humans copy into the project's `discovery/` folder. The master skill's templates include the agent-prompt skeleton and the `00-CONTEXT.md` state file that lets any future session resume instead of re-analyzing.
 
 ## Install
 

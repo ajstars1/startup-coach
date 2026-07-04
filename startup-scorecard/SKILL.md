@@ -38,3 +38,5 @@ Rules:
 Scorecard table (Dimension | Score | Evidence cited | Next evidence to get) → for every score ≤ 3, the **cheapest** next piece of evidence that would raise it → the two-biggest-risks answer → which companion skills to run next (low problem clarity → `/problem-discovery`; weak customer evidence → `/customer-discovery`; shaky market attractiveness → `/where-to-play` + `/secondary-research`; fuzzy money story → `/business-model-canvas`).
 
 Re-run after every ~15–20 interviews or before any major commitment. Score movement over time matters more than any single snapshot.
+
+**Fill-in templates:** `TEMPLATES.md` in this skill's folder — copy the structures into your project's `discovery/` and fill with labels.

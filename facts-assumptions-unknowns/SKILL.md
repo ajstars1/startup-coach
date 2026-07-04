@@ -36,3 +36,5 @@ The epistemic foundation for every other startup framework. Purpose: separate ve
 `[FACT — source]` · `[ASSUMPTION — validation plan + pass/fail]` · `[UNKNOWN — research step]`
 
 *This list is a hypothesis map, not a verdict. Companion skills: `/secondary-research` (moves assumptions to facts), `/customer-discovery` (tests the rest). Framework practice popularized by evidence-first incubation programs; the underlying discipline is Steve Blank's hypothesis testing (Customer Development).*
+
+**Fill-in templates:** `TEMPLATES.md` in this skill's folder — copy the structures into your project's `discovery/` and fill with labels.

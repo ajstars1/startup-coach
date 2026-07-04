@@ -34,3 +34,5 @@ Rules: revenue and cost numbers need sources or `[UNKNOWN + the experiment that 
 ## Output
 
 The 9-block canvas in markdown (every entry labeled), market-type classification + implications, a Get/Keep/Grow plan with per-channel tracking, the riskiest-block test proposal, and a "Validate next" list. Route interview questions to `/customer-discovery` and desk research to `/secondary-research`.
+
+**Fill-in templates:** `TEMPLATES.md` in this skill's folder — copy the structures into your project's `discovery/` and fill with labels.
