@@ -1,6 +1,6 @@
 > **➜ startup-coach is now [founder-stack](https://github.com/ajstars1/founder-stack).** All 10 skills
 > moved there, along with new `/gtm`, `/branding`, `/marketing`, `/sales` and `/learn` skills distilled from 39
-> business books. Install that instead; its `install.sh` replaces these skills cleanly. This repo is archived.
+> business books. Install that instead; its `install.sh` replaces these skills cleanly. This repo is no longer maintained.
 
 # startup-coach
 
