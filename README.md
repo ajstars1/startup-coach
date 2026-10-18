@@ -1,3 +1,7 @@
+> **➜ startup-coach is now [founder-stack](https://github.com/ajstars1/founder-stack).** All 10 skills
+> moved there, along with new `/gtm`, `/branding`, `/marketing`, `/sales` and `/learn` skills distilled from 39
+> business books. Install that instead; its `install.sh` replaces these skills cleanly. This repo is archived.
+
 # startup-coach
 
 **Agent-based startup coaching skills for Claude Code — with a zero-hallucination protocol.**
